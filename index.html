@@ -1544,7 +1544,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,.app::-webkit-scrollbar,.scr::-w
      ?pass=CODE  -> the customer's purchase link (one game per pass, made by your payment webhook)
      ?g=TOKEN    -> the recipient's link: the first phone to open it keeps it, other phones are refused
      Both are checked on the server (Supabase functions in sorry_quest_setup.sql). */
-  var BUY_URL = "https://YOURDOMAIN.com/";   /* where customers buy the game */
+  var BUY_URL = "https://oopise.in/";   /* where customers buy the game */
   var sqPass = "", sqMade = "";
   function sqRpc(fn, args) {
     return fetch(SB_URL + "/rest/v1/rpc/" + fn, { method: "POST", headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY, "Content-Type": "application/json" }, body: JSON.stringify(args) })
